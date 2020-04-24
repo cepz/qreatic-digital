@@ -1,14 +1,16 @@
 import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+
 import './App.css';
 import Login from '../login';
+import Admin from '../Admin';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Background  */}
-        <Login/>
-      {/* /> */}
-    </div>
+    <Router>
+        <Route path='/' exact component={Login}/>
+        <Route path='/admin' exact component={Admin}/>
+    </Router>
   );
 }
 

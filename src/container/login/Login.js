@@ -6,30 +6,30 @@ import Button from '../../ components/button'
 import './login.css'
 import Background from '../../ components/background'
 
-function Login() {
+const Login = () => {
     return (
         <>
-         <div className="auth-container">
-                    <div className="auth-card">
-                        <p className="auth-title">Login</p>
+            <div className="auth-container">
+                <div className="auth-card">
+                    <p className="auth-title">Login</p>
                         <Input
-                        className="input"
-                        id="email"
-                        placeHolder="Email"
-                        type="text"
+                          className="input"
+                          id="email"
+                          placeHolder="Email"
+                          type="text"
                         />
                         <Input
-                        className="input"
-                        id="password"
-                        placeHolder="Password"
-                        type="password"
+                          className="input"
+                          id="password"
+                          placeHolder="Password"
+                          type="password"
                         />
                         <Button
-                        className="btn"
-                        name="Login"/>
-                    </div>
-            <Background/>
-        </div>
+                          className="btn"
+                          name="Login"/>
+                </div>
+              <Background/>
+            </div>
         </>
     )
 }

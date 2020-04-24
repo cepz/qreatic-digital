@@ -1,0 +1,1 @@
+export const RootPath = 'https://dev-wma-051.safanci.com/public/api/admin/modifier/r1?idAccount=1&token=SVTY5YG2uRoWCm0W5r6GjnleeaBI8AstKTUQ1fXQoepBRv7fvqk3amqUgtep&srchModifGrpNm=outlet'

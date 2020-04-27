@@ -1,9 +1,15 @@
 
-## Qreatiq ID - FE Case Study
+# Qreatiq ID - FE Case Study
+    > clone / download
+    > open in terminal:
+        > cd qreatic-digital
+        > yarn install
+        > yarn start
 
-# Page Login
+## Page Login
+    location : http://localhost:3000/
 
-# Dashboar Admin
-
-    > fetch API
+## Dashboard Admin
+    location : http://localhost:3000/admin
+    > fetching API
     > Data Modify API

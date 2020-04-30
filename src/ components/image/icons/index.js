@@ -1,6 +1,7 @@
 import {AiFillDashboard,
         AiFillDatabase,
-        AiOutlineShoppingCart} from "react-icons/ai"
+        AiOutlineShoppingCart,
+        AiOutlineTransaction} from "react-icons/ai"
 
 import {FaProductHunt,
         FaUserAlt,
@@ -26,4 +27,5 @@ export const icons = {
         FaListUl,
         FaBell,
         BsExclamationTriangleFill,
+        AiOutlineTransaction,
 }

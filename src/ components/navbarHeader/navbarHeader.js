@@ -8,7 +8,7 @@ import { Navbar,
 import Image from 'react-bootstrap/Image'
 import profile from './profile/profile.jpg'
 
-import {icons} from '../icons'
+import {icons} from '../image/icons'
 
 function navbarHeader() {
     return (

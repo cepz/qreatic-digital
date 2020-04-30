@@ -2,7 +2,7 @@ import React from 'react'
 import {Nav,
         ListGroup} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {icons} from '../icons'
+import {icons} from '../image/icons'
 
 
 function sidebar() {
@@ -15,13 +15,16 @@ function sidebar() {
                             <icons.AiFillDashboard/> Dashboard
                         </ListGroup.Item>
                         <ListGroup.Item as='li' className="nav-item">
+                            <icons.AiOutlineTransaction/> Transaksi
+                        </ListGroup.Item>
+                        <ListGroup.Item as='li' className="nav-item">
                             <icons.AiFillDatabase/> Laporan
                         </ListGroup.Item>
-                        <ListGroup.Item as='li' className="nav-item">
+                        <ListGroup.Item as='li' className="nav-item" active>
                             <icons.FaProductHunt/> Produk
                         </ListGroup.Item>
-                        <ListGroup.Item as='li' className="nav-item">
-                            <icons.AiOutlineShoppingCart/> Produk
+                        <ListGroup.Item as='li' className="nav-item" >
+                            <icons.AiOutlineShoppingCart/> Inventory
                         </ListGroup.Item>
                         <ListGroup.Item as='li' className="nav-item">
                             <icons.FaUserAlt/> Karyawan

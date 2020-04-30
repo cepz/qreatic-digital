@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { Component, Fragment } from 'react'
 
 import Header from '../../ components/header'
@@ -9,7 +8,7 @@ import {Container,
 import {icons} from '../../ components/image/icons'
 import ModalButton from '../../ components/modalButton'
 import { Link } from 'react-router-dom'
-// import API from '../../service'
+import API from '../../service'
 
 class Admin extends Component {
     state = {
@@ -18,38 +17,25 @@ class Admin extends Component {
     }
 
     getApi = () => {
-        const token = 'SVTY5YG2uRoWCm0W5r6GjnleeaBI8AstKTUQ1fXQoepBRv7fvqk3amqUgtep'
-        const url = 'https://dev-wma-051.qreatiq.net/public/api/admin/modifier/r1'
-        axios.get(`${url}?idAccount=1&token=${token}`)
-        .then(res => {
-            // console.log('response : ', res.data.response.arrOutlet);
+        API.getData().then(res=>{
             this.setState({
-                response : res.data.response.arrOutlet,
+                response : res.response.arrOutlet,
+                modif : res.response.arrModifGrpResult,
             })
-        })
-        .catch(err => {
-            console.log(err)
         })
     }
 
-    getApiAgain = () => {
-        const token = 'SVTY5YG2uRoWCm0W5r6GjnleeaBI8AstKTUQ1fXQoepBRv7fvqk3amqUgtep'
-        const url = 'https://dev-wma-051.qreatiq.net/public/api/admin/modifier/r1'
-        axios.get(`${url}?idAccount=1&token=${token}`)
-        .then(res => {
-            // console.log('response : ', res.data.response.arrModifGrpResult);
-            this.setState({
-                modif : res.data.response.arrModifGrpResult
-            })
-        })
-        .catch(err => {
-            console.log(err)
-        })
-    }
+    // getApiAgain = () => {
+    //     API.getData().then(res=>{
+    //         // console.log('response : ', res.data.response.arrModifGrpResult);
+    //         this.setState({
+    //         })
+    //     })
+    // }
 
     componentDidMount(){
         this.getApi()
-        this.getApiAgain()
+        // this.getApiAgain()
     }
 
     render(){
